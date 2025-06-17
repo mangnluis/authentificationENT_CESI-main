@@ -30,7 +30,6 @@ function handleFirstPage() {
     textInput.dispatchEvent(new Event('input', { bubbles: true }));
     textInput.dispatchEvent(new Event('change', { bubbles: true }));
     
-    console.log('Email rempli: a@viacesi.fr');
     
     const submitButton = document.querySelector('input[type="submit"], button[type="submit"], button') 
                       || document.querySelector('button');
@@ -38,7 +37,6 @@ function handleFirstPage() {
     if (submitButton) {
       setTimeout(() => {
         submitButton.click();
-        console.log('Première page soumise');
       }, 500);
     }
   }
@@ -57,7 +55,6 @@ function handleLoginPage() {
     passwordInput.dispatchEvent(new Event('input', { bubbles: true }));
     passwordInput.dispatchEvent(new Event('change', { bubbles: true }));
     
-    console.log('Identifiants remplis');
     
     const loginButton = document.querySelector('input[type="submit"], button[type="submit"]') 
                      || document.querySelector('#submitButton')
